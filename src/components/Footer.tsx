@@ -5,7 +5,7 @@ import React from "react";
 export default function Footer() {
 
     return (
-        <div className="w-full flex border-t border-foreground pt-4 justify-center gap-20 items-center">
+        <div className="w-full flex border-t border-foreground pt-7 pb-12 justify-center gap-20 items-center">
             <div className="footer-left flex gap-3">
                 <Linkedin className='cursor-pointer'/>
                 <Github className='cursor-pointer' />
