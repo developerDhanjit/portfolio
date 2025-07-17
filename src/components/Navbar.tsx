@@ -14,7 +14,7 @@ import {
 
 export default function Navbar() {
     return (
-        <div className="md:px-20 md:mt-4" >
+        <div className="md:px-20 md:mt-4 hidden md:block" >
             <div className=" md:px-20  w-full text-xl flex justify-between items-center rounded-md border  md:min-h-18 bg-gradient-to-r from-secondary to-primary text-white shadow-md backdrop-blur-md
 ">
                 <div className="text-5xl text-primary   ">
@@ -39,7 +39,7 @@ export default function Navbar() {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <NavigationMenuLink asChild >
-                                <Link href="/" className="hover:underline">Contact me </Link>
+                                <Link href="/me" className="hover:underline">Contact me </Link>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                     </NavigationMenuList>
