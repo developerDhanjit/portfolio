@@ -1,4 +1,5 @@
 <script>
+	import Button from './mini-ui/button.svelte';
 	let buttonStyles = 'rounded-md bg-slate-700 px-3 hover:cursor-pointer';
 </script>
 
@@ -10,10 +11,10 @@
 		<div>
 			<h2 class="font-[audiowide] text-3xl">dn.</h2>
 		</div>
-		<div class="flex items-center justify-around gap-3 font-[orbitron]">
-			<button class={buttonStyles}>Home </button>
-			<button class={buttonStyles}>Products </button>
-			<button class={buttonStyles}>Contact Me</button>
+		<div class="flex items-center justify-around gap-3 ">
+			<Button value="Experience" />
+			<Button value="Products" />
+			<Button value="Contact Me" />
 		</div>
 	</div>
 </nav>

@@ -3,8 +3,9 @@
 
 html,
 body {
-	background: linear-gradient(270deg, #000428, #1a0033, #240046, #3b0a45, #000428, #00111a);
+	background-color: linear-gradient(270deg, #000428, #1a0033, #240046, #3b0a45, #000428, #00111a);
 	background-size: 800% 800%;
+	scroll-behavior: smooth;
 	animation: spaceFlow 15s ease-in-out infinite;
 }
 
@@ -12,6 +13,37 @@ body {
 	min-height: 100vh;
 	box-sizing: border-box;
 	padding: 0.66rem 1rem;
+	color: white;
+	background: url('./full-screen.jpg') repeat;
+
+	/* scrollbar-width: thin;
+	scrollbar-color: var(--color-slate-800) var(--color-slate-900);
+	scrollbar-base-color: var(--color-slate-800); */
+}
+
+/* SCROLLBAR STYLES */
+
+::-webkit-scrollbar,
+.scrollbar {
+	width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--color-slate-900);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #555;
+	border-radius: 1rem;
+	padding: 1rem 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	width: 0.5rem;
+	background: #888;
+	cursor: grab;
 }
 
 @keyframes spaceFlow {
